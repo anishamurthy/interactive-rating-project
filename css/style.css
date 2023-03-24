@@ -1,0 +1,184 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background: #131518;
+  display: grid;
+  margin: 1em;
+}
+#rating,
+#selected {
+  max-width: 412px;
+  color: #969fad;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 0.938rem;
+  background: #232a34;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  background: -moz-radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  padding: 2em;
+  border-radius: 30px;
+}
+#selected {
+  text-align: center;
+  display: none;
+}
+main {
+  justify-self: center;
+  align-self: center;
+}
+p {
+  margin-bottom: 1.5em;
+}
+form {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.3125em;
+}
+h1 {
+  color: #ffffff;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+input[type="submit"] {
+  margin: 2em auto;
+  width: 21.3125em;
+  border-radius: 22.5px;
+  background: #fc7614;
+  color: #ffffff;
+  width: 21.3125em;
+  height: 2.8125em;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+label {
+  background: #262e38;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+.star {
+  box-sizing: content-box;
+  width: 1.046875em;
+  padding: 1em;
+  background: #262e38;
+  border-radius: 50%;
+  margin-bottom: 1.875em;
+}
+.thanks {
+  margin: 0 auto 2em;
+}
+.select {
+  margin: 0;
+  margin-bottom: 2em;
+  color: #fc7614;
+  width: 12.063em;
+  background: #262e38;
+  border-radius: 22.5px;
+  height: 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 0.6875em;
+  text-align: center;
+  color: #ffffff;
+}
+.attribution a {
+  color: #ffffff;
+}
