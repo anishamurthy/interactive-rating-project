@@ -40,11 +40,12 @@
             name="rating"
             type="radio"
             value="1"
-            onfocus="focusState('1','2','3','4','5')"
+            onfocus="focusState('1')"
           /><label
             for="radio1"
             id="1"
-            onmouseover="hoverState(this)"
+            class="label"
+            onmouseover="hover(this)"
             onmouseout="afterHoverState(this, 'radio1')"
             >1</label
           >
@@ -53,11 +54,12 @@
             name="rating"
             type="radio"
             value="2"
-            onfocus="focusState('2','1','3','4','5')"
+            onfocus="focusState('2')"
           /><label
             for="radio2"
             id="2"
-            onmouseover="hoverState(this)"
+            class="label"
+            onmouseover="hover(this)"
             onmouseout="afterHoverState(this, 'radio2')"
             >2</label
           >
@@ -66,11 +68,12 @@
             name="rating"
             type="radio"
             value="3"
-            onfocus="focusState('3','1','2','4','5')"
+            onfocus="focusState('3')"
           /><label
             for="radio3"
             id="3"
-            onmouseover="hoverState(this)"
+            class="label"
+            onmouseover="hover(this)"
             onmouseout="afterHoverState(this, 'radio3')"
             >3</label
           >
@@ -79,11 +82,12 @@
             name="rating"
             type="radio"
             value="4"
-            onfocus="focusState('4','1','2','3','5')"
+            onfocus="focusState('4')"
           /><label
             for="radio4"
             id="4"
-            onmouseover="hoverState(this)"
+            class="label"
+            onmouseover="hover(this)"
             onmouseout="afterHoverState(this, 'radio4')"
             >4</label
           >
@@ -92,11 +96,12 @@
             name="rating"
             type="radio"
             value="5"
-            onfocus="focusState('5','1','2','3','4')"
+            onfocus="focusState('5')"
           /><label
             for="radio5"
             id="5"
-            onmouseover="hoverState(this)"
+            class="label"
+            onmouseover="hover(this)"
             onmouseout="afterHoverState(this, 'radio5')"
             >5</label
           >
@@ -104,9 +109,8 @@
 
           <input
             type="submit"
-            value="Submit"
             onmouseover="hoverSubmit(this)"
-            onmouseout="afterHoverSubmit(this)"
+            onmouseout="hover(this)"
             onclick="onSubmit()"
           />
         </form>
