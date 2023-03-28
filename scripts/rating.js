@@ -1,16 +1,14 @@
-function focusState(id1, id2, id3, id4, id5) {
+function focusState(id1) {
+  var label = document.getElementsByClassName("label");
+  for (let i = 0; i < label.length; i++) {
+    let item = label[i];
+    item.style.backgroundColor = "#262E38";
+    item.style.color = "#7C8798";
+  }
   document.getElementById(id1).style.backgroundColor = "#7C8798";
   document.getElementById(id1).style.color = "#ffffff";
-  document.getElementById(id2).style.backgroundColor = "#262E38";
-  document.getElementById(id2).style.color = "#7C8798";
-  document.getElementById(id3).style.backgroundColor = "#262E38";
-  document.getElementById(id3).style.color = "#7C8798";
-  document.getElementById(id4).style.backgroundColor = "#262E38";
-  document.getElementById(id4).style.color = "#7C8798";
-  document.getElementById(id5).style.backgroundColor = "#262E38";
-  document.getElementById(id5).style.color = "#7C8798";
 }
-function hoverState(element) {
+function hover(element) {
   element.style.backgroundColor = "#FC7614";
   element.style.color = "#ffffff";
 }
@@ -26,10 +24,7 @@ function hoverSubmit(element) {
   element.style.backgroundColor = "#FFFFFF";
   element.style.color = "#FC7614";
 }
-function afterHoverSubmit(element) {
-  element.style.backgroundColor = "#FC7614";
-  element.style.color = "#FFFFFF";
-}
+
 function onSubmit() {
   document.getElementById("rating").style.display = "none";
   document.getElementById("selected").style.display = "block";
