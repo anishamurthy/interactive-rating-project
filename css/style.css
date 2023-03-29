@@ -76,6 +76,7 @@ body {
   background: #131518;
   display: grid;
   margin: 1em;
+  min-height:100vh;
 }
 #rating,
 #selected {
